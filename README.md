@@ -4,7 +4,7 @@
 Modified VGG-16 Weights : https://drive.google.com/file/d/1Tn8Y7ZB1AyU3OqTysJfcAQptieS6y2z8/view?usp=sharing
 
 Modified VGG-16 architecture : 
-
+```
 model = tf.keras.Sequential([
         tf.keras.layers.Conv2D(64, (3,3), \
                                padding='same', \
@@ -56,3 +56,4 @@ model = tf.keras.Sequential([
                                activation='relu'),
         tf.keras.layers.GlobalAveragePooling2D()
 ])
+```
