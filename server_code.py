@@ -71,12 +71,12 @@ players = OrderedDict([
 
 config = tfe.RemoteConfig(players)
 config.save('/tmp/tfe.config')
- 
+
 tfe.set_config(config)
 tfe.set_protocol(tfe.protocol.SecureNN())
 
 tfe_model = tfe.keras.models.clone_model(model)
- 
+
 for player_name in players.keys():
     print("python -m tf_encrypted.player --config /tmp/tfe.config {}".format(player_name))
 
@@ -86,10 +86,10 @@ q_output_shape = (1, 10)
 
 
 server = tfe.serving.QueueServer(input_shape=q_input_shape, output_shape=q_output_shape, computation_fn=tfe_model)
- 
+
 import tf_encrypted.keras.backend as KE
 sess = tfe.Session(config=config)
-
+#sess = KE.get_session()
 
 request_ix = 1
 
