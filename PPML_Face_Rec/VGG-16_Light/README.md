@@ -1,4 +1,4 @@
-# VGG-18_LIGHT
+# VGG-16_LIGHT
 
 
 VGG-16_Light Weights : https://drive.google.com/file/d/19Ck7kyhEwRSoEZzvRcP11ftQ3PIaKlnc/view?usp=sharing
