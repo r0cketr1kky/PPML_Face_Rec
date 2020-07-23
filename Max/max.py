@@ -16,10 +16,10 @@ import numpy as np
 orig_vec = np.array([[0.0, 0.0, 0.32479804907788445, 0.8727328151196464, 0.0, 0.0, 0.0, 0.3610730071635421, 0.0, 0.37540009144947417]])
 orig_vec
 
-orig_vec.shape
+print(orig_vec.shape)
 
 orig_tensor = tf.convert_to_tensor(orig_vec, dtype=tf.float32)
-orig_tensor
+print(orig_tensor)
 
 x = []
 for i in range(10000):
